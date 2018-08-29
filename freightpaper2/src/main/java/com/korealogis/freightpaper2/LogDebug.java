@@ -9,4 +9,8 @@ public class LogDebug {
     public static void d(String message){
         Log.d(TAG, message);
     }
+
+    public static void w(String message){
+        Log.d(TAG, message);
+    }
 }
