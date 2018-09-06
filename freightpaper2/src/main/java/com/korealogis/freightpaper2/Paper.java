@@ -16,7 +16,7 @@ import retrofit2.Response;
 public class Paper {
 
 
-    public static void makePager(String supplierCompanyName, String supplierPhone, String supplierCompanyCode , String cellPhone,
+    public static void makePager(String supplierCompanyName, String supplierPhone, String supplierCompanyCode, String cellPhone,
                                  String docDate, String docNum, String title,
                                  String laAddressDetail, String laAddressCity, String laAddressKun, String laAddressDong, String soAddressDitail,
                                  String soAddresssCity, String soAddressKun, String soAddressDong,
@@ -25,14 +25,14 @@ public class Paper {
         CargoFormDTO cargoform = new CargoFormDTO();
         cargoform.cargoWegit = cargoWeigt;
         cargoform.cargoName = cargoName;
-        cargoform.cargoCount = fee;
+        cargoform.cargoCount = money;
         List<CargoFormDTO> list = new ArrayList<>();
         list.add(cargoform);
 
-        Call<ResultDTO> retro = RetrofitClient.get().simple(Json.simple(list, docDate, docNum,
-                laAddressCity, laAddressDetail, laAddressDong, laAddressKun,
-                soAddresssCity, soAddressDitail, soAddressDong, soAddressKun,
-                supplierCompanyCode, supplierCompanyName, supplierPhone, cellPhone, title));
+        Call<ResultDTO> retro = RetrofitClient.get().simple(Json.simple(list, supplierCompanyName, supplierPhone, supplierCompanyCode, cellPhone,
+                docDate, docNum, title,
+                laAddressDetail, laAddressCity, laAddressKun, laAddressDong, soAddressDitail,
+                soAddresssCity, soAddressKun, soAddressDong));
         retro.enqueue(new Callback<ResultDTO>() {
             @Override
             public void onResponse(Call<ResultDTO> call, Response<ResultDTO> response) {

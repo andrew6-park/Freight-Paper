@@ -37,11 +37,10 @@ public class Json {
         return jo;
     }
 
-    public static JSONObject simple(List<CargoFormDTO> cargoform, String docDate, String docNum, String laAddressCity,
-                                    String laAddressDetail, String laAddressDong, String laAddressKun,
-                                    String soAddresssCity, String soAddressDitail, String soAddressDong, String soAddressKun,
-                                    String supplierCompanyCode, String supplierCompanyName, String supplierPhone,
-                                    String supplierSellPhone, String title) {
+    public static JSONObject simple(List<CargoFormDTO> cargoform, String supplierCompanyName, String supplierPhone, String supplierCompanyCode, String supplierSellPhone,
+                                    String docDate, String docNum, String title,
+                                    String laAddressDetail, String laAddressCity, String laAddressKun, String laAddressDong, String soAddressDetail,
+                                    String soAddresssCity, String soAddressKun, String soAddressDong) {
         JSONObject jo = new JSONObject();
         try {
             JSONArray ja = new JSONArray();
@@ -78,7 +77,7 @@ public class Json {
             jo.put("receivePhone", "");
             jo.put("receiveSellPhone", "");
             jo.put("soAddresssCity", soAddresssCity);
-            jo.put("soAddressDitail", soAddressDitail);
+            jo.put("soAddressDetail", soAddressDetail);
             jo.put("soAddressDong", soAddressDong);
             jo.put("soAddressKun", soAddressKun);
             jo.put("soCompanyName", "");
