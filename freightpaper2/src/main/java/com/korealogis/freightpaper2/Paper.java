@@ -25,8 +25,7 @@ public class Paper {
         CargoFormDTO cargoform = new CargoFormDTO();
         cargoform.cargoWegit = cargoWeigt;
         cargoform.cargoName = cargoName;
-        cargoform.cargoCount = money;
-        cargoform.note = fee;
+        cargoform.cargoCount = fee;
         List<CargoFormDTO> list = new ArrayList<>();
         list.add(cargoform);
 

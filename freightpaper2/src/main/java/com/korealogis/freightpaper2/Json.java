@@ -1,5 +1,7 @@
 package com.korealogis.freightpaper2;
 
+import android.util.Log;
+
 import com.korealogis.freightpaper2.objects.CargoFormDTO;
 
 import org.json.JSONArray;
@@ -98,6 +100,7 @@ public class Json {
             jo.put("supplierPhone", supplierPhone);
             jo.put("supplierSellPhone", supplierSellPhone);
             jo.put("title", title);
+            Log.i("Paper", jo.toString());
             return jo;
         } catch (JSONException e) {
             e.printStackTrace();
