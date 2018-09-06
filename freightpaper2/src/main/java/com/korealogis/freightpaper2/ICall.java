@@ -14,23 +14,23 @@ import retrofit2.http.Query;
 public interface ICall {
 
     @GET("/blockChain/processCheck")
-    Call<Void> makePaper(@Query("tiltle") String tiltle, @Query("docNum")String docNum, @Query("docDate")String docDate,@Query("round") boolean round,@Query("note") String note,
-                         @Query("supplierCompanyName") String supplierCompanyName, @Query("supplierCompanyCode")String supplierCompanyCode,
-                         @Query("supplierCeoName") String supplierCeoName, @Query("supplierAddressCity") String supplierAddressCity,@Query("supplierAddressKun") String supplierAddressKun,
-                         @Query("supplierAddressDong") String supplierAddressDong,@Query("supplierAddressDitail") String supplierAddressDitail,@Query("supplierSellPhone") String supplierSellPhone,
-                         @Query("supplierPhone") String supplierPhone,@Query("supplierFaxNum") String supplierFaxNum,@Query("supplierCompanyType") String supplierCompanyType,
-                         @Query("supplierCompanyKind") String supplierCompanyKind,@Query("receiveCompanyName") String receiveCompanyName,@Query("receiveCompanyCode") String receiveCompanyCode,
-                         @Query("receiveCeoName") String receiveCeoName,@Query("receiveAddressCity") String receiveAddressCity,@Query("receiveAddressKun") String receiveAddressKun,
-                         @Query("receiveAddressDong") String receiveAddressDong,@Query("receiveAddressDitail") String receiveAddressDitail,@Query("receiveSellPhone") String receiveSellPhone,
-                         @Query("receivePhone") String receivePhone,@Query("receiveFaxNum") String receiveFaxNum,@Query("receiveCompanyType") String receiveCompanyType,
-                         @Query("receiveCompanyKind") String receiveCompanyKind,@Query("laCompanyName") String laCompanyName,@Query("laAddressCity") String laAddressCity,
-                         @Query("laAddressKun") String laAddressKun,@Query("laAddressDong") String laAddressDong,@Query("laAddressDitail") String laAddressDitail,
-                         @Query("laPersonInCharge") String laPersonInCharge,@Query("laSellPhone") String laSellPhone,@Query("laPhone") String laPhone,
-                         @Query("laFaxNum") String laFaxNum,@Query("laSupplierDate") String laSupplierDate,@Query("soCompanyName") String soCompanyName,
-                         @Query("soAddressCity") String soAddressCity,@Query("soAddressKun") String soAddressKun,@Query("soAddressDong") String soAddressDong,
-                         @Query("soAddressDitail") String soAddressDitail,@Query("soPersonInCharge") String soPersonInCharge,@Query("soSellPhone") String soSellPhone,
-                         @Query("soPhone") String soPhone,@Query("soFaxNum") String soFaxNum,@Query("stopOverDate") String stopOverDate,
-                         @Query("cargoFormList") String cargoFormList);
+    Call<Void> processCheck(@Query("title") String title, @Query("docNum")String docNum, @Query("docDate")String docDate, @Query("round") boolean round, @Query("note") String note,
+                            @Query("supplierCompanyName") String supplierCompanyName, @Query("supplierCompanyCode")String supplierCompanyCode,
+                            @Query("supplierCeoName") String supplierCeoName, @Query("supplierAddressCity") String supplierAddressCity, @Query("supplierAddressKun") String supplierAddressKun,
+                            @Query("supplierAddressDong") String supplierAddressDong, @Query("supplierAddressDetail") String supplierAddressDetail, @Query("supplierSellPhone") String supplierSellPhone,
+                            @Query("supplierPhone") String supplierPhone, @Query("supplierFaxNum") String supplierFaxNum, @Query("supplierCompanyType") String supplierCompanyType,
+                            @Query("supplierCompanyKind") String supplierCompanyKind, @Query("receiveCompanyName") String receiveCompanyName, @Query("receiveCompanyCode") String receiveCompanyCode,
+                            @Query("receiveCeoName") String receiveCeoName, @Query("receiveAddressCity") String receiveAddressCity, @Query("receiveAddressKun") String receiveAddressKun,
+                            @Query("receiveAddressDong") String receiveAddressDong, @Query("receiveAddressDetail") String receiveAddressDitail, @Query("receiveSellPhone") String receiveSellPhone,
+                            @Query("receivePhone") String receivePhone, @Query("receiveFaxNum") String receiveFaxNum, @Query("receiveCompanyType") String receiveCompanyType,
+                            @Query("receiveCompanyKind") String receiveCompanyKind, @Query("laCompanyName") String laCompanyName, @Query("laAddressCity") String laAddressCity,
+                            @Query("laAddressKun") String laAddressKun, @Query("laAddressDong") String laAddressDong, @Query("laAddressDetail") String laAddressDetail,
+                            @Query("laPersonInCharge") String laPersonInCharge, @Query("laSellPhone") String laSellPhone, @Query("laPhone") String laPhone,
+                            @Query("laFaxNum") String laFaxNum, @Query("laSupplierDate") String laSupplierDate, @Query("soCompanyName") String soCompanyName,
+                            @Query("soAddressCity") String soAddressCity, @Query("soAddressKun") String soAddressKun, @Query("soAddressDong") String soAddressDong,
+                            @Query("soAddressDitail") String soAddressDitail, @Query("soPersonInCharge") String soPersonInCharge, @Query("soSellPhone") String soSellPhone,
+                            @Query("soPhone") String soPhone, @Query("soFaxNum") String soFaxNum, @Query("stopOverDate") String stopOverDate,
+                            @Query("cargoFormList") String cargoFormList);
 
 
     @FormUrlEncoded

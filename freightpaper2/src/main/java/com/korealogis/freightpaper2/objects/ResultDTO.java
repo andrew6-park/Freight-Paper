@@ -10,16 +10,16 @@ public class ResultDTO {
     @SerializedName("resultCode")
     @Expose
     public String resultCode;
-    @SerializedName("resultMassge")
+    @SerializedName("resultMessage")
     @Expose
-    public String resultMassge;
+    public String resultMessage;
 
     @Override
     public String toString() {
         return "ResultDto{" +
                 "processCode='" + processCode + '\'' +
                 ", resultCode='" + resultCode + '\'' +
-                ", resultMassge='" + resultMassge + '\'' +
+                ", resultMessage='" + resultMessage + '\'' +
                 '}';
     }
 }
