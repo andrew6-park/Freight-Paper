@@ -49,7 +49,7 @@ public class Json {
                 cargoObj.put("cargoCount", cargo.cargoCount);
                 cargoObj.put("cargoName", cargo.cargoName);
                 cargoObj.put("cargoStandard", cargo.cargoStandard);
-                cargoObj.put("cargoWegit", cargo.cargoWegit);
+                cargoObj.put("cargoWeight", cargo.cargoWeight);
                 cargoObj.put("note", cargo.note);
                 ja.put(cargoObj);
             }

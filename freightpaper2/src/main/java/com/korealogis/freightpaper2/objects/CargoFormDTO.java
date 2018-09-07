@@ -4,6 +4,6 @@ public class CargoFormDTO {
     public String cargoCount;
     public String cargoName;
     public String cargoStandard;
-    public String cargoWegit;
+    public String cargoWeight;
     public String note;
 }

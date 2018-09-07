@@ -23,7 +23,7 @@ public class Paper {
                                  String money, String fee, String cargoName, String cargoWeigt) {
         final boolean[] isSucess = {false};
         CargoFormDTO cargoform = new CargoFormDTO();
-        cargoform.cargoWegit = cargoWeigt;
+        cargoform.cargoWeight = cargoWeigt;
         cargoform.cargoName = cargoName;
         cargoform.cargoCount = money;
         List<CargoFormDTO> list = new ArrayList<>();
